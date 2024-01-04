@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPAM Learning Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 1em 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0.5em 1em;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 0.5em 1em;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    {% block content %}
+    <header>
+        <h1>OPAM Learning Hub</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#helpdesk">Help Desk</a>
+        <button onclick="window.location.href='registration'">Sign In/Register</button>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to the OPAM Learning Hub. We are dedicated to providing high-quality learning resources for OpenAI Python API models. Learn and explore with us!</p>
+    </section>
+
+    <section id="helpdesk">
+        <h2>Help Desk</h2>
+        <p>If you have any questions or need assistance, please contact our help desk. We are here to help you succeed in your learning journey.</p>
+    </section>
+
+    <section id="signinregister">
+        <!-- You can add the Sign In/Register form or other content here -->
+    </section>
+
+    <footer>
+        &copy; 2024 OPAM Learning Hub. All rights reserved.
+    </footer>
+    {%endblock%}
+</body>
+</html>
